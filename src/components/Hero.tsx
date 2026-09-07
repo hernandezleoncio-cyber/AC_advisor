@@ -19,7 +19,7 @@ export function Hero() {
         </p>
         <div className="hero-actions">
           <a className="btn btn-gold" href="#inquire">
-            Request an introduction
+            Request a time
           </a>
           <a className="btn btn-ghost" href="#story">
             The buyer’s vantage

@@ -44,7 +44,7 @@ export function Nav() {
         </nav>
 
         <a className="nav-cta" href="#inquire">
-          Begin a conversation
+          Request a time
         </a>
 
         <button
