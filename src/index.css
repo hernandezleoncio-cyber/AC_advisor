@@ -808,11 +808,6 @@ figure {
   padding-top: 0.4rem;
 }
 
-.appointment-guest .btn:disabled {
-  opacity: 0.45;
-  cursor: default;
-}
-
 .appointment-embed {
   min-height: 40rem;
   background: var(--cream);

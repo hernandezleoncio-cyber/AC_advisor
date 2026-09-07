@@ -207,7 +207,7 @@ function PreviewSchedule() {
           />
         </label>
         {error ? <p className="form-error">{error}</p> : null}
-        <button className="btn btn-ink" type="submit" disabled={!time}>
+        <button className="btn btn-ink" type="submit">
           {time
             ? `Request ${formatTime(time)} · ${longDate(date)}`
             : "Choose a time"}
