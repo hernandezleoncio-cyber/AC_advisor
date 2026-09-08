@@ -1,25 +1,28 @@
-import { Approach } from "./components/Approach";
-import { Audiences } from "./components/Audiences";
-import { Footer } from "./components/Footer";
-import { Hero } from "./components/Hero";
-import { Inquire } from "./components/Inquire";
-import { Introduction } from "./components/Introduction";
-import { Nav } from "./components/Nav";
-import { Story } from "./components/Story";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { Layout } from "./components/Layout";
+import { About } from "./pages/About";
+import { Contact } from "./pages/Contact";
+import { Expertise } from "./pages/Expertise";
+import { Home } from "./pages/Home";
+import { Manufacturers } from "./pages/Manufacturers";
+import { Retailers } from "./pages/Retailers";
+import { WhyUs } from "./pages/WhyUs";
 
 export default function App() {
   return (
-    <>
-      <Nav />
-      <main>
-        <Hero />
-        <Introduction />
-        <Story />
-        <Audiences />
-        <Approach />
-        <Inquire />
-      </main>
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/manufacturers" element={<Manufacturers />} />
+          <Route path="/retailers" element={<Retailers />} />
+          <Route path="/expertise" element={<Expertise />} />
+          <Route path="/why-us" element={<WhyUs />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }

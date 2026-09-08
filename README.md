@@ -1,21 +1,15 @@
 # AC Advisory
 
-A private food retail advisory site: connecting exceptional food producers with major retailers.
+Two site versions live on separate branches so you can flip between them.
 
-**Connecting Great Food to the Right Retailers**
+**Partnership pages (this branch)** — `cursor/partnership-pages-cc13`  
+Tabs: Home, Manufacturers, Retailers, Our Expertise, Why Us, About, Contact, plus Let’s Talk.
 
-## Local
+**Prestige one-pager (backup)** — `cursor/prestige-advisory-site-cc13`
 
 ```bash
 npm install
 npm run dev
 ```
 
-The site runs at [http://localhost:5173](http://localhost:5173).
-
-## Build
-
-```bash
-npm run build
-npm run preview
-```
+Open [http://localhost:5173](http://localhost:5173).
