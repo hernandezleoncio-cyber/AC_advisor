@@ -586,6 +586,11 @@ h3 {
   background: var(--cream);
 }
 
+.contact-doors h2 {
+  font-size: clamp(1.45rem, 2vw, 1.85rem);
+  line-height: 1.15;
+}
+
 .team-photo {
   display: grid;
   place-items: center;
