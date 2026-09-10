@@ -6,9 +6,17 @@ type PageHeroProps = {
   lead: string;
   image: string;
   alt: string;
+  imageClass?: string;
 };
 
-export function PageHero({ eyebrow, title, lead, image, alt }: PageHeroProps) {
+export function PageHero({
+  eyebrow,
+  title,
+  lead,
+  image,
+  alt,
+  imageClass,
+}: PageHeroProps) {
   return (
     <section className="page-hero">
       <div className="shell page-hero-grid">
@@ -18,7 +26,7 @@ export function PageHero({ eyebrow, title, lead, image, alt }: PageHeroProps) {
           <p className="lead">{lead}</p>
         </div>
         <figure>
-          <img src={image} alt={alt} />
+          <img className={imageClass} src={image} alt={alt} />
         </figure>
       </div>
     </section>

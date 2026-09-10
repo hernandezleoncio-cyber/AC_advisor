@@ -9,9 +9,10 @@ export function Manufacturers() {
       <PageHero
         eyebrow="Manufacturers"
         title="Your Product Deserves the Right Retailer."
-        lead="We help food manufacturers and growers navigate the retail landscape, identify the right opportunities and build relationships that lead to sustainable growth."
-        image={asset("images/farm.jpg")}
-        alt="The origin of exceptional food — the grower and manufacturer side of the table."
+        lead="We help food manufacturers navigate the retail landscape, get the right SKUs onto the set, and build relationships that lead to sustainable growth."
+        image={asset("images/set-readymeals.jpg")}
+        imageClass="fit-shelf"
+        alt="Ready meals merchandised on a supermarket shelf with pack, price and promotional strips."
       />
 
       <section className="plain">

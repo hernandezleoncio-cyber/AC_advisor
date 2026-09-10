@@ -24,8 +24,9 @@ export function Home() {
               <em>Real Results.</em>
             </h1>
             <p className="lead">
-              We connect food manufacturers, growers and emerging brands with
-              the retailers that can help them grow.
+              We connect food manufacturers with the retailers that can help
+              them grow — and we think in shelves, sets and the prepared-foods
+              SKUs shoppers actually buy.
             </p>
             <div className="hero-actions">
               <Link className="btn btn-tomato" to="/manufacturers">
@@ -38,10 +39,10 @@ export function Home() {
           </div>
           <figure className="home-hero-figure">
             <img
-              src={asset("images/olive.jpg")}
-              alt="Exceptional food, ready for the right retail home."
+              src={asset("images/set-foodtogo.jpg")}
+              alt="A food-to-go supermarket case merchandised with grab-and-go sandwiches, snacks and chilled drinks."
             />
-            <figcaption>Retail expertise. Real relationships. Hands-on execution.</figcaption>
+            <figcaption>Buy. Merchandise. Replenish. Strategize.</figcaption>
           </figure>
         </div>
       </section>
@@ -51,9 +52,9 @@ export function Home() {
           <h2>Retail expertise meets entrepreneurial speed.</h2>
           <p>
             We help food companies navigate the path from product development to
-            retail placement—bringing the relationships, experience and
-            hands-on support needed to turn good products into successful retail
-            businesses.
+            the retail set — bringing the relationships, merchandising judgment
+            and hands-on support needed to turn good products into businesses
+            that get bought, replenished and grown.
           </p>
         </div>
       </section>
@@ -61,7 +62,7 @@ export function Home() {
       <section className="problem">
         <div className="shell">
           <p className="eyebrow">The path to market</p>
-          <h2>Getting a Great Product on the Shelf Is Hard.</h2>
+          <h2>Getting a Great Product on the Set Is Hard.</h2>
           <p className="section-lead">
             A manufacturer can have an outstanding product and still struggle
             with:
@@ -118,11 +119,12 @@ export function Home() {
 
       <section className="expertise-home">
         <div className="shell">
-          <p className="eyebrow">Our expertise</p>
-          <h2>Food Is Our Business. Retail Is Our Expertise.</h2>
+          <p className="eyebrow">On the set</p>
+          <h2>The Products We Buy, Merchandise and Grow.</h2>
           <p className="section-lead">
-            We understand the food business from product development through
-            the retail shelf.
+            Grab-and-go sandwiches, salads, pinwheels, wraps, snacking trays,
+            ready meals, pizza, sushi trays, soup cups. Prepared foods retail —
+            not restaurant plating.
           </p>
           <div className="category-grid">
             {categories.map((item) => (
@@ -182,8 +184,8 @@ export function Home() {
       </section>
 
       <CtaBand
-        title="Let’s Put Great Food on More Tables."
-        copy="Whether you’re a manufacturer looking for the right retail partner or a retailer looking for the next great product, we’d like to hear from you."
+        title="Let’s Put Great Food on More Shelves."
+        copy="Whether you’re a manufacturer looking for the right retail set or a retailer looking for the next great product, we’d like to hear from you."
         to="/contact"
         label="Let’s Talk →"
       />

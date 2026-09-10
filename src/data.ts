@@ -4,7 +4,7 @@ export const brand = {
   name: "AC Advisory",
   line: "FOOD. RETAIL. CONNECTIONS.",
   promise:
-    "Helping manufacturers, growers and emerging food brands connect with the retailers that can help them grow.",
+    "Helping manufacturers, growers and emerging food brands connect with the retailers that can help them grow — then merchandise, replenish and build the set.",
 };
 
 export const nav = [
@@ -23,9 +23,9 @@ export const problems = [
   "Getting the buyer’s attention",
   "Understanding retailer expectations",
   "Building the right retail proposition",
-  "Pricing and positioning",
+  "Pricing, positioning and pack",
   "Navigating item setup",
-  "Managing the business after the sale",
+  "Merchandising, replenishing and managing the business after the sale",
 ];
 
 export const steps = [
@@ -37,7 +37,7 @@ export const steps = [
   {
     numeral: "02",
     title: "Position",
-    copy: "We determine where your product fits—and how it should be presented.",
+    copy: "We determine where your product fits on the set — and how it should be presented.",
   },
   {
     numeral: "03",
@@ -57,14 +57,14 @@ export const steps = [
   {
     numeral: "06",
     title: "Grow",
-    copy: "We stay involved to help develop the business beyond the initial placement.",
+    copy: "We stay involved to help merchandise, replenish and develop the business beyond the initial placement.",
   },
 ];
 
 export const differentiators = [
   {
     title: "Retail Experience",
-    copy: "We understand the buyer’s priorities.",
+    copy: "We understand the buyer’s priorities — and what it takes to hold space on the set.",
   },
   {
     title: "Retail Relationships",
@@ -72,26 +72,30 @@ export const differentiators = [
   },
   {
     title: "Commercial Experience",
-    copy: "We understand what it takes to build a sustainable retail business.",
+    copy: "We understand what it takes to buy, merchandise, replenish and build a sustainable retail business.",
   },
 ];
 
 export const categories = [
-  { title: "Fresh & Perishable", image: asset("images/produce.jpg") },
-  { title: "Prepared Foods", image: asset("images/dining.jpg") },
-  { title: "Deli", image: asset("images/cheese.jpg") },
-  { title: "Meat & Protein", image: asset("images/meat.jpg") },
-  { title: "Seafood", image: asset("images/fish.jpg") },
-  { title: "Produce", image: asset("images/market.jpg") },
-  { title: "Frozen", image: asset("images/frozen.jpg") },
-  { title: "Private Brand", image: asset("images/olive.jpg") },
+  {
+    title: "Grab-and-Go Sandwiches",
+    image: asset("images/sku-sandwich.jpg"),
+  },
+  { title: "Salads", image: asset("images/sku-salad.jpg") },
+  { title: "Pinwheels", image: asset("images/sku-pinwheels.jpg") },
+  { title: "Wraps", image: asset("images/sku-wraps.jpg") },
+  { title: "Snacking Trays", image: asset("images/sku-trays.jpg") },
+  { title: "Ready Meals", image: asset("images/sku-meals.jpg") },
+  { title: "Pizza", image: asset("images/sku-pizza.jpg") },
+  { title: "Sushi Trays", image: asset("images/sku-sushi.jpg") },
+  { title: "Soup Cups", image: asset("images/sku-soup.jpg") },
 ];
 
 export const expertiseAreas = [
   "Retail Strategy",
-  "Product Development",
+  "Prepared Foods & Food-to-Go",
+  "Merchandising & Replenishment",
   "Private Brand",
-  "Fresh & Perishable",
   "Buyer Development",
   "Commercialization",
   "Retail Execution",
@@ -129,14 +133,14 @@ export const manufacturerServices = [
   },
   {
     title: "Retail Execution",
-    copy: "Help monitor the business and identify opportunities for growth.",
+    copy: "Help merchandise the set, monitor replenishment and identify opportunities for growth.",
   },
 ];
 
 export const retailerExpect = [
   {
     title: "Relevant Products",
-    copy: "We focus on products that have a reason to exist—not simply another SKU.",
+    copy: "We focus on products that have a reason to exist on the set — not simply another SKU.",
   },
   {
     title: "Qualified Suppliers",
@@ -144,7 +148,7 @@ export const retailerExpect = [
   },
   {
     title: "Category Understanding",
-    copy: "We bring a retailer’s perspective to product evaluation.",
+    copy: "We bring a retailer’s perspective to product evaluation, merchandising and replenishment.",
   },
   {
     title: "Efficient Connections",
@@ -175,17 +179,17 @@ export const whyPoints = [
   {
     numeral: "4",
     title: "Hands-On",
-    copy: "We work alongside our partners. Product. Cost. Presentation. Buyer strategy. Samples. Meetings. Follow-up.",
+    copy: "We work alongside our partners. Product. Cost. Presentation. Buyer strategy. Samples. Meetings. Follow-up. The set.",
   },
   {
     numeral: "5",
     title: "Food First",
-    copy: "We understand the operational realities behind fresh and perishable food.",
+    copy: "We understand the operational realities behind prepared foods, fresh and perishable — buy, merchandise, replenish.",
   },
   {
     numeral: "6",
     title: "Results Matter",
-    copy: "The objective isn’t a buyer meeting. The objective is a successful retail business.",
+    copy: "The objective isn’t a buyer meeting. The objective is a successful retail business that holds its space on shelf.",
   },
 ];
 
@@ -193,6 +197,7 @@ export const aboutFocus = [
   "25+ years of retail experience",
   "Major U.S. retailer experience",
   "Food merchandising",
+  "Prepared foods & food-to-go",
   "Private brand",
   "Product development",
   "Supplier development",

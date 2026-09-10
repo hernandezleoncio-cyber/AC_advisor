@@ -8,14 +8,15 @@ export function WhyUs() {
       <PageHero
         eyebrow="Why Us"
         title="Experience on the Retail Side. Agility on the Supplier Side."
-        lead="We know what it takes to get a product from “interesting” to “on shelf.”"
-        image={asset("images/cheese.jpg")}
-        alt="The buyer’s side of the desk — where products are judged."
+        lead="We know what it takes to get a product from “interesting” to “on the set.”"
+        image={asset("images/set-pizza.jpg")}
+        imageClass="fit-freezer"
+        alt="Frozen pizza merchandised in a supermarket freezer bay."
       />
 
       <section className="plain">
         <div className="shell">
-          <h2>We Know What It Takes to Get a Product From “Interesting” to “On Shelf.”</h2>
+          <h2>We Know What It Takes to Get a Product From “Interesting” to “On the Set.”</h2>
           <ol className="why-list">
             {whyPoints.map((item) => (
               <li key={item.numeral}>
@@ -31,8 +32,8 @@ export function WhyUs() {
       </section>
 
       <CtaBand
-        title="Let’s Put Great Food on More Tables."
-        copy="Retail expertise. Real relationships. Hands-on execution."
+        title="Let’s Put Great Food on More Shelves."
+        copy="Buy. Merchandise. Replenish. Strategize."
         to="/contact"
         label="Let’s Talk →"
       />

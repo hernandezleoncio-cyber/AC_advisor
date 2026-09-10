@@ -8,15 +8,21 @@ export function Expertise() {
       <PageHero
         eyebrow="Our Expertise"
         title="Food Is Our Business. Retail Is Our Expertise."
-        lead="We understand the food business from product development through the retail shelf — which is why this is more than a list of categories."
-        image={asset("images/market.jpg")}
-        alt="Category work starts with the product, not a brochure."
+        lead="We understand the food business from product development through the retail set — buy, merchandise, replenish — which is why this is more than a list of categories."
+        image={asset("images/set-sushi-case.jpg")}
+        imageClass="fit-case"
+        alt="Packaged sushi trays merchandised in a refrigerated supermarket case."
       />
 
       <section className="plain">
         <div className="shell">
-          <p className="eyebrow">Where we work</p>
-          <h2>The Categories We Know</h2>
+          <p className="eyebrow">On the set</p>
+          <h2>The Prepared-Foods Set</h2>
+          <p className="section-lead">
+            The products we used to buy, merchandise, replenish and strategize
+            with — sandwiches, salads, pinwheels, wraps, snacking trays, ready
+            meals, pizza, sushi trays and soup cups.
+          </p>
           <div className="category-grid">
             {categories.map((item) => (
               <article className="category-tile" key={item.title}>

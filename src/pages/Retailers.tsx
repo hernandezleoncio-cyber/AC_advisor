@@ -9,9 +9,10 @@ export function Retailers() {
       <PageHero
         eyebrow="Retailers"
         title="Helping Retailers Find What’s Next."
-        lead="We connect retailers with food manufacturers, growers and emerging brands that can bring differentiated products, strong value and new ideas to their customers."
-        image={asset("images/produce.jpg")}
-        alt="A considered retail set — products that earn their place."
+        lead="We connect retailers with manufacturers who can fill the set — grab-and-go, prepared foods and the SKUs shoppers actually pick up."
+        image={asset("images/set-mealdeal.jpg")}
+        imageClass="fit-shopper"
+        alt="A shopper choosing from a chilled meal-deal set of sandwiches, snacks and drinks."
       />
 
       <section className="plain">

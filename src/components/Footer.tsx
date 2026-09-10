@@ -15,7 +15,7 @@ export function Footer() {
       </div>
       <div className="shell footer-meta">
         <span>{brand.name}</span>
-        <span>Retail expertise. Real relationships. Hands-on execution.</span>
+        <span>Buy. Merchandise. Replenish. Strategize.</span>
       </div>
     </footer>
   );
