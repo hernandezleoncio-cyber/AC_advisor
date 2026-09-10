@@ -1,5 +1,6 @@
 import { CtaBand, PageHero } from "../components/PageHero";
 import { whyPoints } from "../data";
+import { asset } from "../lib/assets";
 
 export function WhyUs() {
   return (
@@ -8,7 +9,7 @@ export function WhyUs() {
         eyebrow="Why Us"
         title="Experience on the Retail Side. Agility on the Supplier Side."
         lead="We know what it takes to get a product from “interesting” to “on shelf.”"
-        image="/images/cheese.jpg"
+        image={asset("images/cheese.jpg")}
         alt="The buyer’s side of the desk — where products are judged."
       />
 

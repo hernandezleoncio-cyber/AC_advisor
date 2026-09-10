@@ -1,3 +1,5 @@
+import { asset } from "./lib/assets";
+
 export const brand = {
   name: "AC Advisory",
   line: "FOOD. RETAIL. CONNECTIONS.",
@@ -75,14 +77,14 @@ export const differentiators = [
 ];
 
 export const categories = [
-  { title: "Fresh & Perishable", image: "/images/produce.jpg" },
-  { title: "Prepared Foods", image: "/images/dining.jpg" },
-  { title: "Deli", image: "/images/cheese.jpg" },
-  { title: "Meat & Protein", image: "/images/meat.jpg" },
-  { title: "Seafood", image: "/images/fish.jpg" },
-  { title: "Produce", image: "/images/market.jpg" },
-  { title: "Frozen", image: "/images/frozen.jpg" },
-  { title: "Private Brand", image: "/images/olive.jpg" },
+  { title: "Fresh & Perishable", image: asset("images/produce.jpg") },
+  { title: "Prepared Foods", image: asset("images/dining.jpg") },
+  { title: "Deli", image: asset("images/cheese.jpg") },
+  { title: "Meat & Protein", image: asset("images/meat.jpg") },
+  { title: "Seafood", image: asset("images/fish.jpg") },
+  { title: "Produce", image: asset("images/market.jpg") },
+  { title: "Frozen", image: asset("images/frozen.jpg") },
+  { title: "Private Brand", image: asset("images/olive.jpg") },
 ];
 
 export const expertiseAreas = [
