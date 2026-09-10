@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>AC Advisory — Client review</title>
+    <style>
+      :root {
+        --paper: #f3efe6;
+        --ink: #161412;
+        --tomato: #c24e2a;
+        --stone: #6d655b;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100dvh;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Georgia, "Times New Roman", serif;
+        padding: 2rem 1.25rem 3rem;
+      }
+      main { max-width: 36rem; margin: 0 auto; }
+      p.kicker {
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        font-family: system-ui, sans-serif;
+        font-size: 0.72rem;
+        font-weight: 700;
+        color: var(--tomato);
+      }
+      h1 { font-size: clamp(2rem, 6vw, 3rem); line-height: 1.1; font-weight: 500; }
+      .lead { font-family: system-ui, sans-serif; color: var(--stone); line-height: 1.55; }
+      .card {
+        display: block;
+        margin: 0.85rem 0;
+        padding: 1.25rem 1.2rem;
+        background: #faf7f0;
+        color: inherit;
+        text-decoration: none;
+        border: 1px solid rgba(22, 20, 18, 0.1);
+      }
+      .card strong { display: block; font-size: 1.35rem; margin-bottom: 0.35rem; }
+      .card span { font-family: system-ui, sans-serif; font-size: 0.95rem; color: var(--stone); }
+      .card.primary { background: var(--tomato); color: #faf7f0; border: 0; }
+      .card.primary span { color: rgba(250, 247, 240, 0.85); }
+      video { width: 100%; margin-top: 0.75rem; background: #111; }
+      h2 { margin-top: 2.4rem; font-size: 1.5rem; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="kicker">AC Advisory · Client review</p>
+      <h1>Open these on an iPad. No Cursor required.</h1>
+      <p class="lead">
+        Two website versions plus a walkthrough video. Share this page with your client —
+        everything opens in Safari.
+      </p>
+
+      <a class="card primary" href="./partnership/">
+        <strong>Partnership site</strong>
+        <span>The tabbed version: Home, Manufacturers, Retailers, Expertise, Why Us, About, Contact.</span>
+      </a>
+      <a class="card" href="./prestige/">
+        <strong>Prestige one-pager</strong>
+        <span>The first editorial version, with the appointment schedule close.</span>
+      </a>
+
+      <h2>Walkthrough video</h2>
+      <p class="lead">Play here, or tap with two fingers to save to Photos / Files and send to YouTube later.</p>
+      <video controls playsinline poster="./videos/thumbnail.png">
+        <source src="./videos/walkthrough.mp4" type="video/mp4" />
+      </video>
+      <a class="card" href="./videos/walkthrough.mp4">Download the in-depth walkthrough</a>
+      <a class="card" href="./videos/prestige-walkthrough.mp4">Download the prestige walkthrough</a>
+      <a class="card" href="./videos/thumbnail.png">Download the YouTube thumbnail</a>
+    </main>
+  </body>
+</html>
