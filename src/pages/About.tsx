@@ -11,7 +11,7 @@ export function About() {
         lead="Not a corporate history. A practice built from the buyer’s side of the desk — merchandising the set, not plating a restaurant dish."
         image={asset("images/set-sandwiches.jpg")}
         imageClass="fit-pack"
-        alt="Packaged grab-and-go sandwiches in retail clamshells, ready for the set."
+        alt="Grab-and-go sandwiches merchandised on a retail set with price tickets."
       />
 
       <section className="plain">
