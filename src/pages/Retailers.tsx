@@ -1,6 +1,7 @@
 import { CtaBand, PageHero } from "../components/PageHero";
 import { FormCard, LeadForm } from "../components/LeadForm";
 import { retailerExpect } from "../data";
+import { asset } from "../lib/assets";
 
 export function Retailers() {
   return (
@@ -9,7 +10,7 @@ export function Retailers() {
         eyebrow="Retailers"
         title="Helping Retailers Find What’s Next."
         lead="We connect retailers with food manufacturers, growers and emerging brands that can bring differentiated products, strong value and new ideas to their customers."
-        image="/images/produce.jpg"
+        image={asset("images/produce.jpg")}
         alt="A considered retail set — products that earn their place."
       />
 

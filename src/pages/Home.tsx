@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { CtaBand } from "../components/PageHero";
+import { asset } from "../lib/assets";
 import {
   brand,
   categories,
@@ -37,7 +38,7 @@ export function Home() {
           </div>
           <figure className="home-hero-figure">
             <img
-              src="/images/olive.jpg"
+              src={asset("images/olive.jpg")}
               alt="Exceptional food, ready for the right retail home."
             />
             <figcaption>Retail expertise. Real relationships. Hands-on execution.</figcaption>

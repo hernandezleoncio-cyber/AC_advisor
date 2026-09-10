@@ -1,5 +1,6 @@
 import { PageHero } from "../components/PageHero";
 import { aboutFocus } from "../data";
+import { asset } from "../lib/assets";
 
 export function About() {
   return (
@@ -8,7 +9,7 @@ export function About() {
         eyebrow="About"
         title="Built by People Who Understand Food and Retail."
         lead="Not a corporate history. A practice built from the buyer’s side of the desk — and the supplier’s need to move."
-        image="/images/hands.jpg"
+        image={asset("images/hands.jpg")}
         alt="Hands-on food work, not a holding-company story."
       />
 

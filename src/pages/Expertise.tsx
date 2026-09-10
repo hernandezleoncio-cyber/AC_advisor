@@ -1,5 +1,6 @@
 import { PageHero } from "../components/PageHero";
 import { categories, expertiseAreas } from "../data";
+import { asset } from "../lib/assets";
 
 export function Expertise() {
   return (
@@ -8,7 +9,7 @@ export function Expertise() {
         eyebrow="Our Expertise"
         title="Food Is Our Business. Retail Is Our Expertise."
         lead="We understand the food business from product development through the retail shelf — which is why this is more than a list of categories."
-        image="/images/market.jpg"
+        image={asset("images/market.jpg")}
         alt="Category work starts with the product, not a brochure."
       />
 

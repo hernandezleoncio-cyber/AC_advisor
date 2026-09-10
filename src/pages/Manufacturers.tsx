@@ -1,6 +1,7 @@
 import { CtaBand, PageHero } from "../components/PageHero";
 import { FormCard, LeadForm } from "../components/LeadForm";
 import { manufacturerServices } from "../data";
+import { asset } from "../lib/assets";
 
 export function Manufacturers() {
   return (
@@ -9,7 +10,7 @@ export function Manufacturers() {
         eyebrow="Manufacturers"
         title="Your Product Deserves the Right Retailer."
         lead="We help food manufacturers and growers navigate the retail landscape, identify the right opportunities and build relationships that lead to sustainable growth."
-        image="/images/farm.jpg"
+        image={asset("images/farm.jpg")}
         alt="The origin of exceptional food — the grower and manufacturer side of the table."
       />
 
