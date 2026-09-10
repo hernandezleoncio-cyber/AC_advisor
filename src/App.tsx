@@ -8,9 +8,11 @@ import { Manufacturers } from "./pages/Manufacturers";
 import { Retailers } from "./pages/Retailers";
 import { WhyUs } from "./pages/WhyUs";
 
+const basename = import.meta.env.BASE_URL.replace(/\/$/, "");
+
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
