@@ -11,7 +11,7 @@ export function WhyUs() {
         lead="We know what it takes to get a product from “interesting” to “on the set.”"
         image={asset("images/set-pizza.jpg")}
         imageClass="fit-freezer"
-        alt="Frozen pizza merchandised in a supermarket freezer bay."
+        alt="Frozen pizza and entrees merchandised in a U.S. supermarket freezer aisle."
       />
 
       <section className="plain">

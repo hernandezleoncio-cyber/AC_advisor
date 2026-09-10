@@ -40,7 +40,7 @@ export function Home() {
           <figure className="home-hero-figure">
             <img
               src={asset("images/set-foodtogo.jpg")}
-              alt="A food-to-go supermarket case merchandised with grab-and-go sandwiches, snacks and chilled drinks."
+              alt="A U.S. supermarket deli merchandised with grab-and-go sandwiches, wraps and salads."
             />
             <figcaption>Buy. Merchandise. Replenish. Strategize.</figcaption>
           </figure>

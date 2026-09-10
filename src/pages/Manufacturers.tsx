@@ -12,7 +12,7 @@ export function Manufacturers() {
         lead="We help food manufacturers navigate the retail landscape, get the right SKUs onto the set, and build relationships that lead to sustainable growth."
         image={asset("images/set-readymeals.jpg")}
         imageClass="fit-shelf"
-        alt="Ready meals merchandised on a supermarket shelf with pack, price and promotional strips."
+        alt="A U.S. supermarket deli set with packaged prepared foods, Boar’s Head and grab-and-go cases."
       />
 
       <section className="plain">

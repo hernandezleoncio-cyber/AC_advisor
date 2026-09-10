@@ -197,7 +197,7 @@ export const aboutFocus = [
   "25+ years of retail experience",
   "Major U.S. retailer experience",
   "Food merchandising",
-  "Prepared foods & food-to-go",
+  "Prepared foods & grab-and-go",
   "Private brand",
   "Product development",
   "Supplier development",

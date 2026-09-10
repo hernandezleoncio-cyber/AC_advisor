@@ -271,15 +271,15 @@ h3 {
 }
 
 .home-hero-figure img {
-  object-position: 68% 42%;
+  object-position: 50% 48%;
 }
 
 .fit-shelf {
-  object-position: 50% 42%;
+  object-position: 50% 58%;
 }
 
 .fit-shopper {
-  object-position: 35% 40%;
+  object-position: 48% 42%;
 }
 
 .fit-case {
@@ -287,11 +287,11 @@ h3 {
 }
 
 .fit-freezer {
-  object-position: 50% 55%;
+  object-position: 50% 32%;
 }
 
 .fit-pack {
-  object-position: 50% 55%;
+  object-position: 55% 48%;
 }
 
 .home-hero-figure figcaption {

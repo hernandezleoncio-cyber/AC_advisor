@@ -11,7 +11,7 @@ export function Expertise() {
         lead="We understand the food business from product development through the retail set — buy, merchandise, replenish — which is why this is more than a list of categories."
         image={asset("images/set-sushi-case.jpg")}
         imageClass="fit-case"
-        alt="Packaged sushi trays merchandised in a refrigerated supermarket case."
+        alt="Packaged sushi trays merchandised in a U.S. grocery refrigerated case."
       />
 
       <section className="plain">

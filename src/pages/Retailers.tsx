@@ -12,7 +12,7 @@ export function Retailers() {
         lead="We connect retailers with manufacturers who can fill the set — grab-and-go, prepared foods and the SKUs shoppers actually pick up."
         image={asset("images/set-mealdeal.jpg")}
         imageClass="fit-shopper"
-        alt="A shopper choosing from a chilled meal-deal set of sandwiches, snacks and drinks."
+        alt="Shoppers at a U.S. supermarket deli with grab-and-go sandwiches and prepared foods on the set."
       />
 
       <section className="plain">
