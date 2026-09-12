@@ -82,13 +82,16 @@ export const categories = [
     image: asset("images/sku-sandwich.jpg"),
   },
   { title: "Salads", image: asset("images/sku-salad.jpg") },
-  { title: "Pinwheels", image: asset("images/sku-pinwheels.jpg") },
   { title: "Wraps", image: asset("images/sku-wraps.jpg") },
+  {
+    title: "Value-Added Proteins",
+    image: asset("images/sku-proteins.jpg"),
+  },
   { title: "Snacking Trays", image: asset("images/sku-trays.jpg") },
   { title: "Ready Meals", image: asset("images/sku-meals.jpg") },
-  { title: "Pizza", image: asset("images/sku-pizza.jpg") },
+  { title: "Ramen", image: asset("images/sku-ramen.jpg") },
   { title: "Sushi Trays", image: asset("images/sku-sushi.jpg") },
-  { title: "Soup Cups", image: asset("images/sku-soup.jpg") },
+  { title: "Soup", image: asset("images/sku-soup.jpg") },
 ];
 
 export const expertiseAreas = [

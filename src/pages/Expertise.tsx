@@ -20,8 +20,8 @@ export function Expertise() {
           <h2>The Prepared-Foods Set</h2>
           <p className="section-lead">
             The products we used to buy, merchandise, replenish and strategize
-            with — sandwiches, salads, pinwheels, wraps, snacking trays, ready
-            meals, pizza, sushi trays and soup cups.
+            with — sandwiches, salads, wraps, value-added proteins, snacking
+            trays, ready meals, ramen, sushi trays and soup.
           </p>
           <div className="category-grid">
             {categories.map((item) => (
