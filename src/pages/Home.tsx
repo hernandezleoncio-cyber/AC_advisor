@@ -40,7 +40,7 @@ export function Home() {
           <figure className="home-hero-figure">
             <img
               src={asset("images/set-foodtogo.jpg")}
-              alt="A U.S. supermarket deli merchandised with grab-and-go sandwiches, wraps and salads."
+              alt="A supermarket food-to-go case merchandised with unlabeled sandwiches and salads."
             />
             <figcaption>Buy. Merchandise. Replenish. Strategize.</figcaption>
           </figure>
@@ -122,9 +122,9 @@ export function Home() {
           <p className="eyebrow">On the set</p>
           <h2>The Products We Buy, Merchandise and Grow.</h2>
           <p className="section-lead">
-            Grab-and-go sandwiches, salads, pinwheels, wraps, snacking trays,
-            ready meals, pizza, sushi trays, soup cups. Prepared foods retail —
-            not restaurant plating.
+            Grab-and-go sandwiches, salads, wraps, value-added proteins,
+            snacking trays, ready meals, ramen, sushi trays, soup. Prepared
+            foods retail — not restaurant plating.
           </p>
           <div className="category-grid">
             {categories.map((item) => (
