@@ -39,7 +39,7 @@ export function About() {
           <div className="team-board">
             <article className="team-card">
               <div className="team-photo" aria-hidden="true">
-                AC
+                <img src={asset("logo-light.svg")} alt="" width="72" height="72" />
               </div>
               <h3>Principal</h3>
               <p>
