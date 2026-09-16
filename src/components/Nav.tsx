@@ -1,13 +1,23 @@
 import { NavLink } from "react-router-dom";
 import { brand, nav } from "../data";
+import { asset } from "../lib/assets";
 
 export function Nav() {
   return (
     <header className="site-nav">
       <div className="site-nav-inner">
         <NavLink className="wordmark" to="/" aria-label={`${brand.name} home`}>
-          <span className="wordmark-mono">AC</span>
-          <span className="wordmark-name">Advisory</span>
+          <img
+            className="wordmark-mark"
+            src={asset("logo.svg")}
+            alt=""
+            width="36"
+            height="36"
+          />
+          <span className="wordmark-stack">
+            <span className="wordmark-name">Merchants</span>
+            <span className="wordmark-name wordmark-forge">Forge</span>
+          </span>
         </NavLink>
         <nav className="site-links" aria-label="Primary">
           {nav.map((item) => (

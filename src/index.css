@@ -181,20 +181,32 @@ h3 {
 
 .wordmark {
   display: inline-flex;
-  align-items: baseline;
-  gap: 0.65rem;
+  align-items: center;
+  gap: 0.7rem;
 }
 
-.wordmark-mono {
-  font-family: var(--serif);
-  font-size: 1.45rem;
+.wordmark-mark {
+  width: 1.9rem;
+  height: 1.9rem;
+  flex: 0 0 auto;
+}
+
+.wordmark-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
 }
 
 .wordmark-name {
-  font-size: 0.7rem;
+  font-size: 0.66rem;
   font-weight: 700;
-  letter-spacing: 0.28em;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
+}
+
+.wordmark-forge {
+  letter-spacing: 0.46em;
+  color: var(--tomato);
 }
 
 .site-nav {
@@ -637,6 +649,11 @@ h3 {
   color: var(--paper);
   font-family: var(--serif);
   font-size: 2.4rem;
+}
+
+.team-photo img {
+  width: 4.5rem;
+  height: 4.5rem;
 }
 
 .team-card.muted .team-photo {

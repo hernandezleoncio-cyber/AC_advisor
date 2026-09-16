@@ -1,7 +1,7 @@
 import { asset } from "./lib/assets";
 
 export const brand = {
-  name: "AC Advisory",
+  name: "Merchants Forge",
   line: "FOOD. RETAIL. CONNECTIONS.",
   promise:
     "Helping manufacturers, growers and emerging food brands connect with the retailers that can help them grow — then merchandise, replenish and build the set.",
