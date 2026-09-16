@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { brand } from "../data";
+import { asset } from "../lib/assets";
 
 export function Footer() {
   return (
@@ -14,7 +15,10 @@ export function Footer() {
         </NavLink>
       </div>
       <div className="shell footer-meta">
-        <span>{brand.name}</span>
+        <span className="footer-brand">
+          <img src={asset("logo-light.svg")} alt="" width="54" height="43" />
+          {brand.name}
+        </span>
         <span>Buy. Merchandise. Replenish. Strategize.</span>
       </div>
     </footer>

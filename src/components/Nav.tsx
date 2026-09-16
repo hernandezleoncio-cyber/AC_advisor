@@ -14,10 +14,7 @@ export function Nav() {
             width="36"
             height="36"
           />
-          <span className="wordmark-stack">
-            <span className="wordmark-name">Merchants</span>
-            <span className="wordmark-name wordmark-forge">Forge</span>
-          </span>
+          <span className="wordmark-lockup">Merchants Forge</span>
         </NavLink>
         <nav className="site-links" aria-label="Primary">
           {nav.map((item) => (

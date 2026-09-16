@@ -1,4 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-hidden="true">
-  <path fill="#161412" d="M4 44V6h12L24 24 32 6h12v16L30 44H4z"/>
-  <path fill="#c24e2a" d="M30 44 44 22v22H30z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 78" role="img" aria-hidden="true">
+  <defs>
+    <mask id="cut">
+      <rect width="100" height="78" fill="#fff"/>
+      <line x1="0" y1="74" x2="100" y2="4" stroke="#000" stroke-width="6"/>
+    </mask>
+  </defs>
+  <g mask="url(#cut)" fill="#161412">
+    <polygon points="6,46 6,6 20,6 33,28 46,6 60,6 60,34 48,34 33,42 20,24 20,46"/>
+    <path d="M48 30h42v13H62v6h24v11H62v12H48V30z"/>
+  </g>
+  <line x1="2" y1="72" x2="98" y2="6" stroke="#c24e2a" stroke-width="2.6" stroke-linecap="round"/>
 </svg>
