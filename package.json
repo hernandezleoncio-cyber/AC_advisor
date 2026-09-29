@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build && cp dist/index.html dist/404.html && cp netlify.toml dist/netlify.toml",
+    "build:wix": "tsc -b && VITE_HASH_ROUTER=true vite build && node scripts/pack-wix.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
