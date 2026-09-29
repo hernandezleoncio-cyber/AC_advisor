@@ -1,4 +1,5 @@
 import { useState, type FormEvent, type ReactNode } from "react";
+import { brand } from "../data";
 
 type Field = {
   name: string;
@@ -17,13 +18,22 @@ type LeadFormProps = {
   successCopy: string;
 };
 
+function notifyEmail() {
+  return import.meta.env.VITE_NOTIFY_EMAIL || brand.notifyEmail;
+}
+
 export function LeadForm({ id, fields, submitLabel, successTitle, successCopy }: LeadFormProps) {
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
   const [error, setError] = useState("");
 
-  const onSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
+    const form = event.currentTarget;
+    const data = new FormData(form);
+    if (String(data.get("company_website") ?? "").trim()) {
+      return;
+    }
     const missing = fields.some(
       (field) => field.required && !String(data.get(field.name) ?? "").trim(),
     );
@@ -31,8 +41,45 @@ export function LeadForm({ id, fields, submitLabel, successTitle, successCopy }:
       setError("Please complete the required fields.");
       return;
     }
+
+    const payload: Record<string, string> = {
+      _subject: `AC Advisory inquiry — ${id}`,
+      _template: "table",
+      _captcha: "false",
+      form: id,
+    };
+    for (const field of fields) {
+      payload[field.label] = String(data.get(field.name) ?? "").trim();
+    }
+    const reply = String(data.get("email") ?? "").trim();
+    if (reply) payload._replyto = reply;
+
     setError("");
-    setSent(true);
+    setSending(true);
+    try {
+      const response = await fetch(
+        `https://formsubmit.co/ajax/${encodeURIComponent(notifyEmail())}`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(payload),
+        },
+      );
+      const result = (await response.json()) as { success?: string | boolean; message?: string };
+      if (!response.ok || result.success === false || result.success === "false") {
+        throw new Error(result.message || "Could not send");
+      }
+      setSent(true);
+    } catch {
+      setError(
+        "We could not send that just now. Email us directly and we will pick it up.",
+      );
+    } finally {
+      setSending(false);
+    }
   };
 
   if (sent) {
@@ -47,6 +94,10 @@ export function LeadForm({ id, fields, submitLabel, successTitle, successCopy }:
 
   return (
     <form id={id} className="lead-form" onSubmit={onSubmit} noValidate>
+      <label className="hp" aria-hidden="true">
+        <span>Company website</span>
+        <input type="text" name="company_website" tabIndex={-1} autoComplete="off" />
+      </label>
       {fields.map((field) => (
         <label key={field.name} className={field.full || field.multiline ? "full" : ""}>
           <span>
@@ -61,8 +112,8 @@ export function LeadForm({ id, fields, submitLabel, successTitle, successCopy }:
         </label>
       ))}
       {error ? <p className="form-error">{error}</p> : null}
-      <button className="btn btn-ink" type="submit">
-        {submitLabel}
+      <button className="btn btn-ink" type="submit" disabled={sending}>
+        {sending ? "Sending…" : submitLabel}
       </button>
     </form>
   );

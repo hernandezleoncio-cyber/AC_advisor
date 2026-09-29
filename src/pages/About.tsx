@@ -36,29 +36,25 @@ export function About() {
         <div className="shell">
           <p className="eyebrow">The people behind the relationships</p>
           <h2>Why a manufacturer should trust this practice with their retail business.</h2>
-          <div className="team-board">
-            <article className="team-card">
-              <div className="team-photo" aria-hidden="true">
-                AC
+          <div className="team-board principal-board">
+            <article className="team-card principal-card">
+              <figure className="team-photo">
+                <img
+                  src={asset("images/principal.jpg")}
+                  alt="Principal of AC Advisory, food and retail advisor."
+                />
+              </figure>
+              <div>
+                <p className="eyebrow">Principal</p>
+                <h3>AC Advisory</h3>
+                <p>
+                  25+ years in retail — merchandising, prepared foods, private
+                  brand, product development, supplier development and retail
+                  strategy with major U.S. retailers. The question we answer on
+                  every introduction: would we have taken this meeting if we still
+                  sat on the buyer’s side of the desk?
+                </p>
               </div>
-              <h3>Principal</h3>
-              <p>
-                25+ years in retail — merchandising, prepared foods, private
-                brand, product development, supplier development and retail
-                strategy with major U.S. retailers. The question we answer on
-                every introduction: would we have taken this meeting if we still
-                sat on the buyer’s side of the desk?
-              </p>
-            </article>
-            <article className="team-card muted">
-              <div className="team-photo" aria-hidden="true">
-                —
-              </div>
-              <h3>Team photographs live here</h3>
-              <p>
-                Short bios. Not résumés. Real people, not stock photography —
-                added as portraits are ready.
-              </p>
             </article>
           </div>
         </div>

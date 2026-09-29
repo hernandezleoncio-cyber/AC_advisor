@@ -632,11 +632,48 @@ h3 {
   display: grid;
   place-items: center;
   height: 12rem;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem;
+  overflow: hidden;
   background: var(--forest);
   color: var(--paper);
   font-family: var(--serif);
   font-size: 2.4rem;
+}
+
+.team-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 18%;
+}
+
+.principal-board {
+  grid-template-columns: 1fr;
+}
+
+.principal-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) 1fr;
+  gap: 1.75rem;
+  align-items: center;
+}
+
+.principal-card .team-photo {
+  height: 22rem;
+  margin-bottom: 0;
+}
+
+.lead-form .hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.lead-form button:disabled {
+  opacity: 0.65;
+  cursor: wait;
 }
 
 .team-card.muted .team-photo {
@@ -741,7 +778,8 @@ h3 {
   .contact-doors,
   .cta-band-inner,
   .footer-grid,
-  .lead-form {
+  .lead-form,
+  .principal-card {
     grid-template-columns: 1fr;
   }
 

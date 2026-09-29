@@ -23,6 +23,10 @@ That writes `wix-upload/ac-advisory-wix.zip` (under Wix’s 20 MB / 3 MB-per-fil
 
 Do **not** upload `src/`, `package.json`, or the GitHub repo. Wix will not build those.
 
+## Inquiries
+
+The three lead forms (Manufacturers, Retailers, Contact) email the inbox in `brand.notifyEmail` (override with `VITE_NOTIFY_EMAIL`). The first live submission sends a confirmation link from FormSubmit — click it once so future notes arrive automatically.
+
 ## What this is not
 
 Rebuilding the pages inside the classic Wix Editor is a full redesign, not a file move. Use Headless Drop if they want this site as-is.

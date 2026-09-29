@@ -5,6 +5,8 @@ export const brand = {
   line: "FOOD. RETAIL. CONNECTIONS.",
   promise:
     "Helping manufacturers, growers and emerging food brands connect with the retailers that can help them grow — then merchandise, replenish and build the set.",
+  // Inquiries from the three lead forms are emailed here. Override with VITE_NOTIFY_EMAIL.
+  notifyEmail: "hernandez.leoncio@gmail.com",
 };
 
 export const nav = [
