@@ -40,13 +40,14 @@ export function About() {
             <figure className="principal-photo">
               <img
                 src={asset("images/principal.jpg")}
-                alt="Principal of Merchants Forge"
+                alt="Adam Chadwick, CEO of Merchants Forge"
                 width="864"
                 height="1152"
               />
             </figure>
             <div className="principal-copy">
-              <h3>Principal</h3>
+              <h3>Adam Chadwick</h3>
+              <p className="principal-role">Merchants Forge CEO</p>
               <p>
                 25+ years in retail — merchandising, prepared foods, private
                 brand, product development, supplier development and retail

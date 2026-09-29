@@ -652,7 +652,16 @@ h3 {
   font-size: clamp(1.6rem, 2.2vw, 2rem);
 }
 
-.principal-copy p {
+.principal-role {
+  margin-top: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--tomato);
+}
+
+.principal-copy p:not(.principal-role) {
   margin-top: 0.7rem;
   color: var(--stone);
   max-width: 36rem;
