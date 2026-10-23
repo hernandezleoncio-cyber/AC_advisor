@@ -64,10 +64,6 @@ export function LeadForm({ id, fields, submitLabel }: LeadFormProps) {
         </label>
       ))}
       {error ? <p className="form-error">{error}</p> : null}
-      <p className="form-note">
-        Messages go to {CONTACT_EMAIL}. The first send asks Adam to confirm the
-        mailbox — after that, they arrive like regular email.
-      </p>
       <button className="btn btn-ink" type="submit" disabled={sending}>
         {sending ? "Sending…" : submitLabel}
       </button>
