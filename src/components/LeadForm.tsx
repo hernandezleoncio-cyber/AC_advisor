@@ -17,36 +17,39 @@ type LeadFormProps = {
   successCopy: string;
 };
 
-export function LeadForm({ id, fields, submitLabel, successTitle, successCopy }: LeadFormProps) {
-  const [sent, setSent] = useState(false);
+const CONTACT_EMAIL = "Adam.Chadwick@yahoo.com";
+
+export function LeadForm({ id, fields, submitLabel }: LeadFormProps) {
   const [error, setError] = useState("");
+  const [sending, setSending] = useState(false);
 
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
     const data = new FormData(event.currentTarget);
     const missing = fields.some(
       (field) => field.required && !String(data.get(field.name) ?? "").trim(),
     );
     if (missing) {
+      event.preventDefault();
       setError("Please complete the required fields.");
       return;
     }
     setError("");
-    setSent(true);
+    setSending(true);
   };
 
-  if (sent) {
-    return (
-      <div className="form-success" role="status">
-        <p className="eyebrow">Received</p>
-        <h3>{successTitle}</h3>
-        <p>{successCopy}</p>
-      </div>
-    );
-  }
-
   return (
-    <form id={id} className="lead-form" onSubmit={onSubmit} noValidate>
+    <form
+      id={id}
+      className="lead-form"
+      action={`https://formsubmit.co/${CONTACT_EMAIL}`}
+      method="POST"
+      onSubmit={onSubmit}
+      noValidate
+    >
+      <input type="hidden" name="_subject" value={`Merchants Forge website — ${id}`} />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_next" value="https://merchantsforge.com/" />
       {fields.map((field) => (
         <label key={field.name} className={field.full || field.multiline ? "full" : ""}>
           <span>
@@ -61,8 +64,8 @@ export function LeadForm({ id, fields, submitLabel, successTitle, successCopy }:
         </label>
       ))}
       {error ? <p className="form-error">{error}</p> : null}
-      <button className="btn btn-ink" type="submit">
-        {submitLabel}
+      <button className="btn btn-ink" type="submit" disabled={sending}>
+        {sending ? "Sending…" : submitLabel}
       </button>
     </form>
   );

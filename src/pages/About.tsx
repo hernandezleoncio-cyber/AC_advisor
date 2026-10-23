@@ -36,12 +36,18 @@ export function About() {
         <div className="shell">
           <p className="eyebrow">The people behind the relationships</p>
           <h2>Why a manufacturer should trust this practice with their retail business.</h2>
-          <div className="team-board">
-            <article className="team-card">
-              <div className="team-photo" aria-hidden="true">
-                <img src={asset("logo-light.svg")} alt="" width="72" height="72" />
-              </div>
-              <h3>Principal</h3>
+          <article className="principal">
+            <figure className="principal-photo">
+              <img
+                src={asset("images/principal.jpg")}
+                alt="Adam Chadwick, CEO of Merchants Forge"
+                width="864"
+                height="1152"
+              />
+            </figure>
+            <div className="principal-copy">
+              <h3>Adam Chadwick</h3>
+              <p className="principal-role">Merchants Forge CEO</p>
               <p>
                 25+ years in retail — merchandising, prepared foods, private
                 brand, product development, supplier development and retail
@@ -49,18 +55,8 @@ export function About() {
                 every introduction: would we have taken this meeting if we still
                 sat on the buyer’s side of the desk?
               </p>
-            </article>
-            <article className="team-card muted">
-              <div className="team-photo" aria-hidden="true">
-                —
-              </div>
-              <h3>Team photographs live here</h3>
-              <p>
-                Short bios. Not résumés. Real people, not stock photography —
-                added as portraits are ready.
-              </p>
-            </article>
-          </div>
+            </div>
+          </article>
         </div>
       </section>
     </>
