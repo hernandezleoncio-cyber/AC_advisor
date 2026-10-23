@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Layout } from "./components/Layout";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
@@ -8,11 +8,9 @@ import { Manufacturers } from "./pages/Manufacturers";
 import { Retailers } from "./pages/Retailers";
 import { WhyUs } from "./pages/WhyUs";
 
-const basename = import.meta.env.BASE_URL.replace(/\/$/, "");
-
 export default function App() {
   return (
-    <BrowserRouter basename={basename}>
+    <HashRouter>
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
@@ -25,6 +23,6 @@ export default function App() {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }

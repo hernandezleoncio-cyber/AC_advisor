@@ -17,11 +17,14 @@ type LeadFormProps = {
   successCopy: string;
 };
 
+const CONTACT_EMAIL = "Adam.Chadwick@yahoo.com";
+
 export function LeadForm({ id, fields, submitLabel, successTitle, successCopy }: LeadFormProps) {
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
   const [error, setError] = useState("");
 
-  const onSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     const missing = fields.some(
@@ -31,8 +34,46 @@ export function LeadForm({ id, fields, submitLabel, successTitle, successCopy }:
       setError("Please complete the required fields.");
       return;
     }
+
+    const payload: Record<string, string> = {
+      _subject: `Merchants Forge website — ${id}`,
+      _template: "table",
+      _captcha: "false",
+      form: id,
+    };
+    for (const field of fields) {
+      payload[field.name] = String(data.get(field.name) ?? "").trim();
+    }
+    if (payload.email) {
+      payload._replyto = payload.email;
+    }
+
     setError("");
-    setSent(true);
+    setSending(true);
+    try {
+      const response = await fetch(
+        `https://formsubmit.co/ajax/${encodeURIComponent(CONTACT_EMAIL)}`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(payload),
+        },
+      );
+      const result = (await response.json()) as { success?: boolean | string; message?: string };
+      if (!response.ok || result.success === false || result.success === "false") {
+        throw new Error(result.message || "Send failed");
+      }
+      setSent(true);
+    } catch {
+      setError(
+        "We couldn’t send that just now. Email Adam.Chadwick@yahoo.com directly and we’ll pick it up.",
+      );
+    } finally {
+      setSending(false);
+    }
   };
 
   if (sent) {
@@ -61,8 +102,8 @@ export function LeadForm({ id, fields, submitLabel, successTitle, successCopy }:
         </label>
       ))}
       {error ? <p className="form-error">{error}</p> : null}
-      <button className="btn btn-ink" type="submit">
-        {submitLabel}
+      <button className="btn btn-ink" type="submit" disabled={sending}>
+        {sending ? "Sending…" : submitLabel}
       </button>
     </form>
   );
